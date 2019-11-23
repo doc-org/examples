@@ -1,0 +1,39 @@
+#+LATEX_HEADER: \input{header.tex}
+#+LATEX_CLASS: empty
+#+OPTIONS: toc:nil
+
+#+TITLE: DOC-ORG: Docker, Org Mode, Latex
+
+* header
+  hello
+** subheader
+   | one | two |
+   |-----+-----|
+   |   1 |   2 |
+   |   3 |   4 |
+
+   text for subheader
+
+* some code
+  #+begin_src c
+    int main()
+    {
+        printf("hello world\n");
+    }
+  #+end_src
+* lists
+** numerated
+1. one
+2. two
+   1. sub-two
+      1. sub-sub-two
+3. three
+
+** unnumerated
+   - One
+     - Two
+       - Three
+         - Four
+** with description
+   - element1 :: element1 description
+   - element2 :: element2 description
