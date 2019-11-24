@@ -3,16 +3,17 @@
 #+OPTIONS: toc:nil
 
 #+TITLE: DOC-ORG: Docker, Org Mode, Latex
+#+AUTHOR: Marco Ieni
 
 * header
-  hello
+  hello.
 ** subheader
+   look how cute is this simple table:
+
    | one | two |
    |-----+-----|
    |   1 |   2 |
    |   3 |   4 |
-
-   text for subheader
 
 * some code
   #+begin_src c
@@ -23,17 +24,24 @@
   #+end_src
 * lists
 ** numerated
-1. one
-2. two
-   1. sub-two
-      1. sub-sub-two
-3. three
+   1. one
+   2. two
+      1. sub-two
+         1. sub-sub-two
+   3. three
 
 ** unnumerated
    - One
      - Two
        - Three
          - Four
+
+*** trivia
+    Doc-org could mean a lot of things, such as:
+    - document - organized
+    - docker - org mode
+    - docile - organist
+    A team of 42 linguists is currently searching for the answer.
 ** with description
    - element1 :: element1 description
    - element2 :: element2 description
