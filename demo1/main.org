@@ -43,5 +43,5 @@
     - docile - organist
     A team of 42 linguists is currently searching for the answer.
 ** with description
-   - element1 :: element1 description
-   - element2 :: element2 description
+   - element1 :: description for element one
+   - element2 :: description for element two
