@@ -19,6 +19,9 @@ jobs:
         ../doc-org/doc-org
     - name: push output
       run: |
+        ls
+        ls build
+        tree
         git config --global user.name 'MarcoIeni'
         git config --global user.email 'MarcoIeni@users.noreply.github.com'
         git add build/demo1.pdf build/main.tex
