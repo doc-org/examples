@@ -15,6 +15,12 @@ jobs:
       run: git clone https://github.com/doc-org/doc-org
     - name: build demo1
       run: |
-        ls
         cd demo1
         ../doc-org/doc-org
+    - name: push output
+      run: |
+        git config --global user.name 'MarcoIeni'
+        git config --global user.email 'MarcoIeni@users.noreply.github.com'
+        git add build/demo1.pdf build/main.tex
+        git commit -m "update"
+        git push
