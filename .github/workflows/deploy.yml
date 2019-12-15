@@ -39,7 +39,10 @@ jobs:
         </head>
         <body>" >> deploy/index.html
 
+        whoami
+        ls -al
         for dir in deploy/*/; do
+          ls -al $dir
           echo "<h1>$dir</h1>
               <ul>" >> deploy/index.html
           for file in $dir*; do
