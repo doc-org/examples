@@ -39,17 +39,15 @@ jobs:
         </head>
         <body>" >> deploy/index.html
 
-        whoami
-        ls -al
         for dir in deploy/*/; do
-          ls -al $dir
+          dir=$(basename $dir)
           echo "<h1>$dir</h1>
               <ul>" >> deploy/index.html
           files=$(ls $dir)
           echo files:
           echo $files
           for file in $files; do
-            echo "        <li><a href=\"$directory$file\">$file</a></li>" >> deploy/index.html
+            echo "        <li><a href=\"$dir$file\">$file</a></li>" >> deploy/index.html
           done
           echo "    </ul>" >> deploy/index.html
         done
