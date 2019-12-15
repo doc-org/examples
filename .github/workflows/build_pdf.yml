@@ -15,13 +15,20 @@ jobs:
       run: git clone https://github.com/doc-org/doc-org
     - name: build demo1
       run: |
-        cd demo1
-        ../doc-org/doc-org
+        examples=(*/)
+        mkdir deploy
+        for dir in $examples; do
+          mkdir deploy/$dir
+          cd $dir
+          ../doc-org/doc-org
+          mv build/*.pdf build/*.tex ../deploy/$dir
+          cd ..
+        done
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v2
       env:
         ACTIONS_DEPLOY_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY }}
         PUBLISH_BRANCH: gh-pages
-        PUBLISH_DIR: ./demo1/build
+        PUBLISH_DIR: ./deploy
       with:
         emptyCommits: false
