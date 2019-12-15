@@ -23,7 +23,7 @@ jobs:
           ../doc-org/doc-org
 
           # give current user ownership of the build directory
-          current_user=whoami
+          current_user=$(whoami)
           sudo chown -R $current_user build
 
           mv build/*.pdf build/*.tex ../deploy/$dir
