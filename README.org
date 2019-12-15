@@ -3,3 +3,5 @@
 [[http://spacemacs.org][file:https://cdn.rawgit.com/syl20bnr/spacemacs/442d025779da2f62fc86c2082703697714db6514/assets/spacemacs-badge.svg]]
 
 Examples of documents created with doc-org.
+
+The output of the examples is automatically generated, you can see it [[https://github.com/doc-org/examples/tree/gh-pages][here]].
