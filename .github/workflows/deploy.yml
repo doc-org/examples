@@ -48,7 +48,7 @@ jobs:
           files=$(ls $dir)
           echo files:
           echo $files
-          for file in files; do
+          for file in $files; do
             echo "        <li><a href=\"$directory$file\">$file</a></li>" >> deploy/index.html
           done
           echo "    </ul>" >> deploy/index.html
