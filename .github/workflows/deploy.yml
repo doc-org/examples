@@ -45,9 +45,11 @@ jobs:
           ls -al $dir
           echo "<h1>$dir</h1>
               <ul>" >> deploy/index.html
-          for file in $dir*; do
-            filename=basename $file
-            echo "        <li><a href=\"$directory$filename\">$filename</a></li>" >> deploy/index.html
+          files=$(ls $dir)
+          echo files:
+          echo $files
+          for file in files; do
+            echo "        <li><a href=\"$directory$file\">$file</a></li>" >> deploy/index.html
           done
           echo "    </ul>" >> deploy/index.html
         done
