@@ -37,7 +37,7 @@ jobs:
             <meta charset="utf-8" />
             <title>Doc-Org Examples</title>
         </head>
-        <body>" >> deploy/index.html
+        <body>Examples input<a href=\"https://github.com/doc-org/examples">here</a>. Examples output:" >> deploy/index.html
 
         for dir in deploy/*/; do
           dir_basename=$(basename $dir)
