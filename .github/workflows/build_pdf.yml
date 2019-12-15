@@ -23,6 +23,7 @@ jobs:
         ls
         git config --global user.name 'MarcoIeni'
         git config --global user.email 'MarcoIeni@users.noreply.github.com'
+        git checkout gh-pages
         git add build/demo1.pdf build/main.tex
-        git commit -m "update"
+        git commit -m "automatic update"
         git push
