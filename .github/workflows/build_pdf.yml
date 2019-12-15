@@ -21,9 +21,12 @@ jobs:
           mkdir deploy/$dir
           cd $dir
           ../doc-org/doc-org
-          whoami
-          ls -al
-          sudo mv build/*.pdf build/*.tex ../deploy/$dir
+
+          # give current user ownership of the build directory
+          current_user=whoami
+          sudo chown -R $current_user build
+
+          mv build/*.pdf build/*.tex ../deploy/$dir
           cd ..
         done
     - name: build website
