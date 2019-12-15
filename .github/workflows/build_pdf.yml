@@ -21,6 +21,8 @@ jobs:
           mkdir deploy/$dir
           cd $dir
           ../doc-org/doc-org
+          whoami
+          ls -al
           mv build/*.pdf build/*.tex ../deploy/$dir
           cd ..
         done
