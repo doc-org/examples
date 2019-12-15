@@ -23,7 +23,7 @@ jobs:
           ../doc-org/doc-org
           whoami
           ls -al
-          mv build/*.pdf build/*.tex ../deploy/$dir
+          sudo mv build/*.pdf build/*.tex ../deploy/$dir
           cd ..
         done
     - name: Deploy
