@@ -1,0 +1,83 @@
+% Created 2019-12-15 Sun 12:24
+% Intended LaTeX compiler: pdflatex
+
+
+\input{header.tex}
+\author{Marco Ieni}
+\date{\today}
+\title{DOC-ORG: Docker, Org Mode, Latex}
+\begin{document}
+
+\maketitle
+
+\section{header}
+\label{sec:orge59f0e8}
+hello.
+\subsection{subheader}
+\label{sec:org8c05987}
+look how cute is this simple table:
+
+\begin{center}
+\begin{tabular}{rr}
+one & two\\
+\hline
+1 & 2\\
+3 & 4\\
+\end{tabular}
+\end{center}
+
+\section{some code}
+\label{sec:orgef01410}
+\begin{verbatim}
+int main()
+{
+    printf("hello world\n");
+}
+\end{verbatim}
+\section{lists}
+\label{sec:org356a1ce}
+\subsection{numerated}
+\label{sec:org5cad38f}
+\begin{enumerate}
+\item one
+\item two
+\begin{enumerate}
+\item sub-two
+\begin{enumerate}
+\item sub-sub-two
+\end{enumerate}
+\end{enumerate}
+\item three
+\end{enumerate}
+
+\subsection{unnumerated}
+\label{sec:orgde8318d}
+\begin{itemize}
+\item One
+\begin{itemize}
+\item Two
+\begin{itemize}
+\item Three
+\begin{itemize}
+\item Four
+\end{itemize}
+\end{itemize}
+\end{itemize}
+\end{itemize}
+
+\subsubsection{trivia}
+\label{sec:org6be5970}
+Doc-org could mean a lot of things, such as:
+\begin{itemize}
+\item document - organized
+\item docker - org mode
+\item docile - organist
+\end{itemize}
+A team of 42 linguists is currently searching for the answer.
+\subsection{with description}
+\label{sec:org59f2d11}
+\begin{description}
+\item[{element1}] description for element one
+\item[{element2}] description for element two
+\end{description}
+\end{document}
