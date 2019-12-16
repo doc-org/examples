@@ -1,4 +1,3 @@
-#+LATEX_CLASS: empty
 #+OPTIONS: toc:nil
 
 #+TITLE: DOC-ORG: Docker, Org Mode, Latex
