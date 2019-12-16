@@ -37,11 +37,13 @@ jobs:
             <meta charset="utf-8" />
             <title>Doc-Org Examples</title>
         </head>
-        <body>Examples input<a href=\"https://github.com/doc-org/examples">here</a>. Examples output:" >> deploy/index.html
+        <body>
+        <h1>Doc-Org Examples</h1>
+        Examples input <a href=\"https://github.com/doc-org/examples\">here</a>. Examples output:" >> deploy/index.html
 
         for dir in deploy/*/; do
           dir_basename=$(basename $dir)
-          echo "<h1>$dir_basename</h1>
+          echo "<h2>$dir_basename</h1>
               <ul>" >> deploy/index.html
           files=$(ls $dir)
           echo files:
