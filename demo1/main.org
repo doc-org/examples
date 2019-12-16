@@ -3,11 +3,11 @@
 #+TITLE: DOC-ORG: Docker, Org Mode, Latex
 #+AUTHOR: Marco Ieni
 
-* header
+* section
   This examples show what you can do with a two lines long =header.tex=.
   To change the aspect of what you see, edit it!
-** subheader
-   this text is a inside subheader.
+** subsection
+   this text is a inside subsection.
 
 * some code
   #+begin_src c
