@@ -10,12 +10,13 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v1
+    - uses: actions/checkout@v2
     - name: download doc-org
       run: git clone https://github.com/doc-org/doc-org
     - name: run doc org
       run: |
         examples=$(ls -d */)
+        echo $examples
         mkdir deploy
         for dir in $examples; do
           mkdir deploy/$dir
