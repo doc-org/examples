@@ -15,7 +15,7 @@ jobs:
       run: git clone https://github.com/doc-org/doc-org
     - name: run doc org
       run: |
-        examples=(*/)
+        examples=$(ls -d */)
         mkdir deploy
         for dir in $examples; do
           mkdir deploy/$dir
