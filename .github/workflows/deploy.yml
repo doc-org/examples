@@ -54,11 +54,10 @@ jobs:
           echo "    </ul>" >> deploy/index.html
         done
         echo "</body></html>" >> deploy/index.html
-    - name: Deploy
-      uses: peaceiris/actions-gh-pages@v2
-      env:
-        ACTIONS_DEPLOY_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY }}
-        PUBLISH_BRANCH: gh-pages
-        PUBLISH_DIR: ./deploy
+    - name: Deploy to gh-pages
+      uses: peaceiris/actions-gh-pages@v3
       with:
+        deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+        publish_dir: ./deploy
+        publish_branch: gh-pages
         emptyCommits: false
