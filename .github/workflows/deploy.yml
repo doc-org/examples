@@ -11,12 +11,11 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: download doc-org
-      run: git clone https://github.com/doc-org/doc-org
     - name: run doc org
       run: |
         examples=$(ls -d */)
-        echo $examples
+        echo "$examples"
+        git clone https://github.com/doc-org/doc-org
         mkdir deploy
         for dir in $examples; do
           mkdir deploy/$dir
