@@ -1,5 +1,5 @@
 * section
-  This examples show what you can do with a two lines long =header.tex=.
+  This example shows what you can do with a minimal =header.tex= file.
   To change the aspect of what you see, edit it!
 ** subsection
    This text is a inside subsection. You can add a reference to section [[section]].
