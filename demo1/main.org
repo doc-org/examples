@@ -1,8 +1,3 @@
-#+OPTIONS: toc:nil
-
-#+TITLE: DOC-ORG: Docker, Org Mode, Latex
-#+AUTHOR: Marco Ieni
-
 * section
   This examples show what you can do with a two lines long =header.tex=.
   To change the aspect of what you see, edit it!
