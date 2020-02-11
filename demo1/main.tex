@@ -1,37 +1,17 @@
-% Created 2020-02-11 Tue 19:12
-% Intended LaTeX compiler: pdflatex
-\documentclass[11pt]{article}
-\usepackage[utf8]{inputenc}
-\input{header.tex}
-\usepackage[T1]{fontenc}
-\usepackage{graphicx}
-\usepackage{grffile}
-\usepackage{longtable}
-\usepackage{wrapfig}
-\usepackage{rotating}
-\usepackage[normalem]{ulem}
-\usepackage{amsmath}
-\usepackage{textcomp}
-\usepackage{amssymb}
-\usepackage{capt-of}
-\usepackage{hyperref}
-\author{root}
-\date{\today}
-\title{}
 \begin{document}
-
-\tableofcontents
+\maketitle
+\input{header.tex}
 
 \section{section}
-\label{sec:org1b0318a}
-This examples show what you can do with a two lines long \texttt{header.tex}.
+\label{sec:orgf82a136}
+This example shows what you can do with a minimal \texttt{header.tex} file.
 To change the aspect of what you see, edit it!
 \subsection{subsection}
-\label{sec:orgbb23819}
-This text is a inside subsection. You can add a reference to section \ref{sec:org1b0318a}.
+\label{sec:org67c3da1}
+This text is a inside subsection. You can add a reference to section \ref{sec:orgf82a136}.
 
 \section{some code}
-\label{sec:org5c7a7c0}
+\label{sec:org2e18a95}
 \begin{verbatim}
 int main()
 {
@@ -39,9 +19,9 @@ int main()
 }
 \end{verbatim}
 \section{lists}
-\label{sec:orgce97164}
+\label{sec:org03d34ca}
 \subsection{numerated}
-\label{sec:org7e1eff3}
+\label{sec:orgde0220e}
 \begin{enumerate}
 \item one
 \item two
@@ -55,7 +35,7 @@ int main()
 \end{enumerate}
 
 \subsection{unnumerated}
-\label{sec:orga8a7ec4}
+\label{sec:orga142588}
 \begin{itemize}
 \item One
 \begin{itemize}
@@ -70,7 +50,7 @@ int main()
 \end{itemize}
 
 \subsubsection{trivia}
-\label{sec:org31998b2}
+\label{sec:org523db31}
 Doc-org could mean a lot of things, such as:
 \begin{itemize}
 \item document - organized
@@ -79,7 +59,7 @@ Doc-org could mean a lot of things, such as:
 \end{itemize}
 A team of 42 linguists is currently searching for the answer.
 \subsection{with description}
-\label{sec:org1e98f40}
+\label{sec:orgaca7c79}
 \begin{description}
 \item[{element1}] description for element one.
 \item[{element2}] Very long description for element two, in order to show a
@@ -87,30 +67,30 @@ multiline description.
 \end{description}
 
 \section{Some math}
-\label{sec:org7260ddc}
-You can insert latex equation, like equation \ref{eq:org4358f9a}.
+\label{sec:orgd6668f9}
+You can insert latex equation, like equation \ref{eq:org43ef42f}.
 \begin{equation}
-\label{eq:org4358f9a}
+\label{eq:org43ef42f}
 \phi = \frac{2\pi fD}{c}
 \end{equation}
 \subsection{Other latex equations}
-\label{sec:org99f792e}
-Equation \ref{eq:org61f27ae} reference.
+\label{sec:org02e45ac}
+Equation \ref{eq:orgd39291d} reference.
 
 \begin{equation}
-\label{eq:org61f27ae}
+\label{eq:orgd39291d}
 D = \frac{c\phi}{2\pi f}
 \end{equation}
 
 \subsubsection{A more complicated equation}
-\label{sec:org6ad323b}
+\label{sec:orga2feb55}
 
 \begin{equation}
 \Delta TOF_{est} = \frac{k_T TOF}{1+k_T } - 0.5 \frac{\mu_A' - \mu_T'}{1+k_T}.
 \end{equation}
 
 \section{tables}
-\label{sec:org88913c7}
+\label{sec:orgb3fbedc}
 
 look how cute is this simple table:
 
@@ -124,7 +104,7 @@ one & two\\
 \end{center}
 
 \begin{table}[htbp]
-\caption{\label{tab:orgde23593}
+\caption{\label{tab:orgebb7605}
 You can add captions to your tables}
 \centering
 \begin{tabular}{lrrrrr}
@@ -135,4 +115,5 @@ a2 & 5.275 & 0.329 & 1.127 & 0.117 & 6.332\\
 a3 & 5.406 & 0.672 & 1.117 & 0.114 & 6.457\\
 \end{tabular}
 \end{table}
+-e 
 \end{document}
