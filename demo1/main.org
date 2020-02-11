@@ -7,7 +7,7 @@
   This examples show what you can do with a two lines long =header.tex=.
   To change the aspect of what you see, edit it!
 ** subsection
-   this text is a inside subsection.
+   This text is a inside subsection. You can add a reference to section [[section]].
 
 * some code
   #+begin_src c
