@@ -79,3 +79,20 @@ You can insert image, for example see image [[fig:ssatwr]].
 #+CAPTION: Example image.
 #+NAME:   fig:example_image
 [[./img/example_image.png]]
+
+** image matrix
+   In image \ref{fig:image_matrix} you can find an example of how to combine different images
+   into one in latex.
+
+\begin{figure}[!tbp]
+  \centering
+  \subfloat[Case 1.]{\includegraphics[width=0.55\textwidth]{./img/example_image.png}\label{fig:f1}}
+  \subfloat[Case 2.]{\includegraphics[width=0.55\textwidth]{./img/example_image.png}\label{fig:f2}}
+  \\
+  \subfloat[Case 3.]{\includegraphics[width=0.55\textwidth]{./img/example_image.png}\label{fig:f3}}
+  \subfloat[Case 4.]{\includegraphics[width=0.55\textwidth]{./img/example_image.png}\label{fig:f4}}
+  \\
+  \subfloat[Case 5.]{\includegraphics[width=0.55\textwidth]{./img/example_image.png}\label{fig:f5}}
+  \subfloat[Case 6.]{\includegraphics[width=0.55\textwidth]{./img/example_image.png}\label{fig:f6}}
+  \caption{\label{fig:image_matrix}Combine more pictures into one.}
+\end{figure}
