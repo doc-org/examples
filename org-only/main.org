@@ -1,0 +1,34 @@
+#+TITLE: Org mode only
+#+AUTHOR: Marco Ieni
+
+* Introduction
+This is an example of how you can use the =auto_latex= feature.
+In this feature, in fact, =header.tex= is not included automatically by
+doc-org.
+In fact, the latex output of this file will be the same of the emacs
+default export.
+
+* Advantages
+If you don't care about specific latex customization, emacs will do the work for
+you.
+
+* Disadvantages
+In my opinion, if you don't like emacs defaults, it becomes complicated to
+customize latex output.
+
+* Customize latex
+
+Here is an example of how you can customize latex output
+#+begin_src
+# do not show table of content
+#+OPTIONS: toc:nil
+
+# custom latex class
+#+LaTeX_CLASS: book
+
+# include an entire latex file
+#+LATEX_HEADER: \input{my_file.tex}
+
+# extra packages
+#+LATEX_HEADER: \usepackage{my-package}
+#+end_src
