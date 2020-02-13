@@ -1,2 +1,179 @@
--e 
+\input{header.tex}
+
+\begin{document}
+\maketitle
+% Created 2020-02-13 Thu 20:12
+% Intended LaTeX compiler: pdflatex
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{grffile}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\author{root}
+\date{\today}
+\title{}
+\hypersetup{
+ pdfauthor={root},
+ pdftitle={},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 26.1 (Org mode 9.1.9)}, 
+ pdflang={English}}
+\begin{document}
+
+\tableofcontents
+
+\section{section}
+\label{sec:orgf55b3dd}
+This example shows what you can do with a minimal \texttt{header.tex} file.
+To change the aspect of what you see, edit it!
+\subsection{subsection}
+\label{sec:org9a2f40c}
+This text is a inside subsection. You can add a reference to section \ref{sec:orgf55b3dd}.
+
+\section{some code}
+\label{sec:org1ab4557}
+\begin{verbatim}
+int main()
+{
+  printf("hello world\n");
+}
+\end{verbatim}
+\section{lists}
+\label{sec:org80cf81a}
+\subsection{numerated}
+\label{sec:orgcca49fa}
+\begin{enumerate}
+\item one
+\item two
+\begin{enumerate}
+\item sub-two
+\begin{enumerate}
+\item sub-sub-two
+\end{enumerate}
+\end{enumerate}
+\item three
+\end{enumerate}
+
+\subsection{unnumerated}
+\label{sec:orgd299589}
+\begin{itemize}
+\item One
+\begin{itemize}
+\item Two
+\begin{itemize}
+\item Three
+\begin{itemize}
+\item Four
+\end{itemize}
+\end{itemize}
+\end{itemize}
+\end{itemize}
+
+\subsubsection{trivia}
+\label{sec:orgb900288}
+Doc-org could mean a lot of things, such as:
+\begin{itemize}
+\item document - organized
+\item docker - org mode
+\item docile - organist
+\end{itemize}
+A team of 42 linguists is currently searching for the answer.
+\subsection{with description}
+\label{sec:orgbc8079b}
+\begin{description}
+\item[{element1}] description for element one.
+\item[{element2}] Very long description for element two, in order to show a
+multiline description.
+\end{description}
+
+\section{Some math}
+\label{sec:org037ed9e}
+You can insert latex equation, like equation \ref{eq:org7544cd1}.
+\begin{equation}
+\label{eq:org7544cd1}
+\phi = \frac{2\pi fD}{c}
+\end{equation}
+\subsection{Other latex equations}
+\label{sec:org7e20800}
+Equation \ref{eq:org10039c8} reference.
+
+\begin{equation}
+\label{eq:org10039c8}
+D = \frac{c\phi}{2\pi f}
+\end{equation}
+
+\subsubsection{A more complicated equation}
+\label{sec:org848dc0e}
+
+\begin{equation}
+\Delta TOF_{est} = \frac{k_T TOF}{1+k_T } - 0.5 \frac{\mu_A' - \mu_T'}{1+k_T}.
+\end{equation}
+
+\section{tables}
+\label{sec:org94987ae}
+
+look how cute is this simple table:
+
+\begin{center}
+\begin{tabular}{rr}
+one & two\\
+\hline
+1 & 2\\
+3 & 4\\
+\end{tabular}
+\end{center}
+
+\begin{table}[htbp]
+\caption{\label{tab:orgb331c57}
+You can add captions to your tables}
+\centering
+\begin{tabular}{lrrrrr}
+Anchor & MAE & Correlation & MMA & MAPE & RMSE\\
+\hline
+a1 & 6.871 & -0.372 & 1.164 & 0.157 & 8.515\\
+a2 & 5.275 & 0.329 & 1.127 & 0.117 & 6.332\\
+a3 & 5.406 & 0.672 & 1.117 & 0.114 & 6.457\\
+\end{tabular}
+\end{table}
+
+\section{Images}
+\label{sec:org0ea13d3}
+You can insert image, for example see image \ref{fig:org9a04330}.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=.9\linewidth]{./img/example_image.png}
+\caption{\label{fig:org9a04330}
+Example image.}
+\end{figure}
+
+\subsection{image matrix}
+\label{sec:org05b207c}
+In image \ref{fig:image_matrix} you can find an example of how to combine different images
+into one in latex.
+
+\begin{figure}[!tbp]
+  \centering
+  \subfloat[Case 1.]{\includegraphics[width=0.55\textwidth]{./img/example_image.png}\label{fig:f1}}
+  \subfloat[Case 2.]{\includegraphics[width=0.55\textwidth]{./img/example_image.png}\label{fig:f2}}
+  \\
+  \subfloat[Case 3.]{\includegraphics[width=0.55\textwidth]{./img/example_image.png}\label{fig:f3}}
+  \subfloat[Case 4.]{\includegraphics[width=0.55\textwidth]{./img/example_image.png}\label{fig:f4}}
+  \\
+  \subfloat[Case 5.]{\includegraphics[width=0.55\textwidth]{./img/example_image.png}\label{fig:f5}}
+  \subfloat[Case 6.]{\includegraphics[width=0.55\textwidth]{./img/example_image.png}\label{fig:f6}}
+  \caption{\label{fig:image_matrix}Combine more pictures into one.}
+\end{figure}
+\end{document}
+
 \end{document}
