@@ -20,6 +20,7 @@ jobs:
         for dir in $examples; do
           mkdir deploy/$dir
           cd $dir
+          echo "process directory "$dir""
           ls
           ../doc-org/doc-org
 
