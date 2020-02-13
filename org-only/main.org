@@ -17,7 +17,6 @@ In my opinion, if you don't like emacs defaults, it becomes complicated to
 customize latex output.
 
 * Customize latex
-
 Here is an example of how you can customize latex output
 #+begin_src
 # do not show table of content
@@ -32,3 +31,5 @@ Here is an example of how you can customize latex output
 # extra packages
 #+LATEX_HEADER: \usepackage{my-package}
 #+end_src
+
+Be sure to check [[https://orgmode.org/manual/LaTeX-Export.html][latex export]] documentation in org-mode website.
