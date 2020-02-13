@@ -20,6 +20,7 @@ jobs:
         for dir in $examples; do
           mkdir deploy/$dir
           cd $dir
+          ls
           ../doc-org/doc-org
 
           # give current user ownership of the build directory
