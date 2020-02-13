@@ -74,7 +74,7 @@
   | a3     | 5.406 |       0.672 | 1.117 | 0.114 | 6.457 |
 
 * Images
-You can insert image, for example see image [[fig:ssatwr]].
+You can insert image, for example see image [[fig:example_image]].
 
 #+CAPTION: Example image.
 #+NAME:   fig:example_image
