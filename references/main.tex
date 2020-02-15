@@ -2,27 +2,30 @@
 
 \begin{document}
 \section{Introduction}
-\label{sec:org40b42a9}
+\label{sec:orgdab4e67}
 This example shows how references works.
 
 \section{Sections}
-\label{sec:org689805a}
-You can add a reference to section \ref{sec:org40b42a9}.
+\label{sec:orga51eb59}
+You can add a reference to section \ref{sec:orgdab4e67}.
 
 \section{Equations}
-\label{sec:orgedb92f8}
-You can refer to equation \ref{eq:org1a2e13c}.
+\label{sec:orgbb2ac28}
+You can refer to equation \ref{eq:org4260fa8}.
 \begin{equation}
-\label{eq:org1a2e13c}
+\label{eq:org4260fa8}
 \phi = \frac{2\pi fD}{c}
 \end{equation}
 
 \section{Tables}
-\label{sec:org8972da3}
-Reference to \ref{tab:org36652cf}.
+\label{sec:org943a34b}
+Reference to \ref{tab:org1f2c32b}.
+Caption is required for the reference to work properly.
 
-\begin{center}
-\label{tab:org36652cf}
+\begin{table}[htbp]
+\caption{\label{tab:org1f2c32b}
+a nice table}
+\centering
 \begin{tabular}{lr}
 Anchor & MAE\\
 \hline
@@ -30,6 +33,17 @@ a1 & 6.871\\
 a2 & 5.275\\
 a3 & 5.406\\
 \end{tabular}
-\end{center}
+\end{table}
+
+\section{Code}
+\label{sec:org2752938}
+You can refer to code \ref{org1aceff9}
+
+\begin{verbatim}
+int main()
+{
+    printf("hello world\n");
+}
+\end{verbatim}
 
 \end{document}
