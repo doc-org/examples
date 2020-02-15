@@ -11,18 +11,21 @@
   #+begin_src c -n -r
     int main()
     {
-        printf("hello world\n"); (ref:print_c)
+        printf("hello world\n"); (ref:print-c)
   #+end_src
 
-  In line [[(print_c)]] you print =hello world= to =stdout=.
+  In line [[(print-c)]] you print =hello world= to =stdout=.
   #+begin_src c +n -r
-        int a = 1 + 2; (ref:example_sum)
+        int a = 1 + 2; (ref:example-sum)
     }
   #+end_src
 
-  In line [[(example_sum)]] you just do an assignment.
+  In line [[(example-sum)]] you just do an assignment.
 
   See [[https://orgmode.org/manual/Literal-Examples.html][literal examples]] documentation if you want explanation about this stuff.
+
+  In my experience unserscore does not work with code references. For example
+  =print_c= will not work in this case.
 
 ** python code
   #+begin_src python
