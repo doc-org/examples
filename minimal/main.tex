@@ -2,33 +2,48 @@
 
 \begin{document}
 \section{Introduction}
-\label{sec:orgfefb165}
+\label{sec:org6a6a5e2}
 This example shows what you can do with a one line \texttt{header.tex} file.
 
 \subsection{subsection}
-\label{sec:orgaceeeaf}
-This text is a inside subsection.
+\label{sec:orgeaf7232}
+This text is a inside subsection. You can refer to other sections, like section \ref{sec:org6a6a5e2}.
 
 \section{some code}
-\label{sec:orge5285fb}
+\label{sec:orgaf8f8ab}
 Even if you specify the programming language, code syntax is not highlighted
 by default.
+
 \begin{verbatim}
-int main()
-{
-    printf("hello world\n");
-}
+1  int main()
+2  {
+3      printf("hello world\n");
 \end{verbatim}
 
+In line 3 you print \texttt{hello world} to \texttt{stdout}.
+\begin{verbatim}
+4      int a = 1 + 2;
+5  }
+\end{verbatim}
+
+In line 4 you just do an assignment.
+
+See \href{https://orgmode.org/manual/Literal-Examples.html}{literal examples} documentation if you want explanation about this stuff.
+
+In my experience unserscore does not work with code references. For example
+\texttt{print\_c} will not work in this case.
+
+\subsection{python code}
+\label{sec:org5fd4445}
 \begin{verbatim}
 # This program prints Hello, world!
 print('Hello, world!')
 \end{verbatim}
 
 \section{lists}
-\label{sec:org7597826}
+\label{sec:org9389feb}
 \subsection{numerated}
-\label{sec:orgc6cc0da}
+\label{sec:orgd23afa2}
 \begin{enumerate}
 \item one
 \item two
@@ -42,7 +57,7 @@ print('Hello, world!')
 \end{enumerate}
 
 \subsection{unnumerated}
-\label{sec:org2a50915}
+\label{sec:org847d414}
 \begin{itemize}
 \item One
 \begin{itemize}
@@ -57,7 +72,7 @@ print('Hello, world!')
 \end{itemize}
 
 \subsubsection{trivia}
-\label{sec:orgfe27cc5}
+\label{sec:orgd383622}
 Doc-org could mean a lot of things, such as:
 \begin{itemize}
 \item document - organized
@@ -67,27 +82,27 @@ Doc-org could mean a lot of things, such as:
 A team of 42 linguists is currently searching for the answer.
 
 \section{Some math}
-\label{sec:org6b19277}
-You can insert latex equation, like equation \ref{eq:orga4e01d7}.
+\label{sec:org3dfdaf3}
+You can insert latex equation, like equation \ref{eq:org32c0c95}.
 \begin{equation}
-\label{eq:orga4e01d7}
+\label{eq:org32c0c95}
 \phi = \frac{2\pi fD}{c}
 \end{equation}
 
 As you can see, reference to equations works by default, but see \texttt{references}
-example if you want to know more.
+example if you want links to be clickable.
 
 \subsection{Other latex equations}
-\label{sec:org03a902d}
-Equation \ref{eq:org7e970bb} reference.
+\label{sec:orgee46f83}
+Equation \ref{eq:org63ab8ee} reference.
 
 \begin{equation}
-\label{eq:org7e970bb}
+\label{eq:org63ab8ee}
 D = \frac{c\phi}{2\pi f}
 \end{equation}
 
 \subsubsection{A more complicated equation}
-\label{sec:org5d03697}
+\label{sec:org84a7de2}
 
 \begin{equation}
 \Delta TOF_{est} = \frac{k_T TOF}{1+k_T } - 0.5 \frac{\mu_A' - \mu_T'}{1+k_T}.
