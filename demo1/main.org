@@ -5,12 +5,19 @@
    This text is a inside subsection. You can add a reference to section [[section]].
 
 * some code
+  If you specify the programming language, code syntax is highlighted.
   #+begin_src c
     int main()
     {
-      printf("hello world\n");
+        printf("hello world\n");
     }
   #+end_src
+
+  #+begin_src python
+    # This program prints Hello, world!
+    print('Hello, world!')
+  #+end_src
+
 * lists
 ** numerated
    1. one
@@ -74,25 +81,25 @@
   | a3     | 5.406 |       0.672 | 1.117 | 0.114 | 6.457 |
 
 * Images
-You can insert image, for example see image [[fig:example_image]].
+  You can insert image, for example see image [[fig:example_image]].
 
-#+CAPTION: Example image.
-#+NAME:   fig:example_image
-[[./img/example_image.png]]
+  #+CAPTION: Example image.
+  #+NAME:   fig:example_image
+  [[./img/example_image.png]]
 
 ** image matrix
    In image \ref{fig:image_matrix} you can find an example of how to combine different images
    into one in latex.
 
-\begin{figure}[!tbp]
-  \centering
-  \subfloat[Case 1.]{\includegraphics[width=0.55\textwidth]{./img/example_image.png}\label{fig:f1}}
-  \subfloat[Case 2.]{\includegraphics[width=0.55\textwidth]{./img/example_image.png}\label{fig:f2}}
-  \\
-  \subfloat[Case 3.]{\includegraphics[width=0.55\textwidth]{./img/example_image.png}\label{fig:f3}}
-  \subfloat[Case 4.]{\includegraphics[width=0.55\textwidth]{./img/example_image.png}\label{fig:f4}}
-  \\
-  \subfloat[Case 5.]{\includegraphics[width=0.55\textwidth]{./img/example_image.png}\label{fig:f5}}
-  \subfloat[Case 6.]{\includegraphics[width=0.55\textwidth]{./img/example_image.png}\label{fig:f6}}
-  \caption{\label{fig:image_matrix}Combine more pictures into one.}
-\end{figure}
+   \begin{figure}[!tbp]
+     \centering
+     \subfloat[Case 1.]{\includegraphics[width=0.55\textwidth]{./img/example_image.png}\label{fig:f1}}
+     \subfloat[Case 2.]{\includegraphics[width=0.55\textwidth]{./img/example_image.png}\label{fig:f2}}
+     \\
+     \subfloat[Case 3.]{\includegraphics[width=0.55\textwidth]{./img/example_image.png}\label{fig:f3}}
+     \subfloat[Case 4.]{\includegraphics[width=0.55\textwidth]{./img/example_image.png}\label{fig:f4}}
+     \\
+     \subfloat[Case 5.]{\includegraphics[width=0.55\textwidth]{./img/example_image.png}\label{fig:f5}}
+     \subfloat[Case 6.]{\includegraphics[width=0.55\textwidth]{./img/example_image.png}\label{fig:f6}}
+     \caption{\label{fig:image_matrix}Combine more pictures into one.}
+   \end{figure}
