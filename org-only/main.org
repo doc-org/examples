@@ -33,3 +33,6 @@ Here is an example of how you can customize latex output
 #+end_src
 
 Be sure to check [[https://orgmode.org/manual/LaTeX-Export.html][latex export]] documentation in org-mode website.
+
+* references
+You can add references to other sections, like section [[Introduction]].

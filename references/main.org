@@ -1,0 +1,22 @@
+* Introduction
+  This example shows how references works.
+
+* Sections
+  You can add a reference to section [[Introduction]].
+
+* Equations
+  You can refer to equation [[eqn:phi]].
+  #+Name: eqn:phi
+  \begin{equation}
+  \phi = \frac{2\pi fD}{c}
+  \end{equation}
+
+* Tables
+  Reference to [[anchor_table]].
+
+  #+NAME: anchor_table
+  | Anchor |   MAE |
+  |--------+-------+
+  | a1     | 6.871 |
+  | a2     | 5.275 |
+  | a3     | 5.406 |

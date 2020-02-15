@@ -1,8 +1,12 @@
+# tell latex to insert a title
+\maketitle
+
+# tell latex to insert a page break
+\newpage
+
 * section
   This example shows what you can do with a minimal =header.tex= file.
   To change the aspect of what you see, edit it!
-** subsection
-   This text is a inside subsection. You can add a reference to section [[section]].
 
 * some code
   If you specify the programming language, code syntax is highlighted.
@@ -17,31 +21,6 @@
     # This program prints Hello, world!
     print('Hello, world!')
   #+end_src
-
-* lists
-** numerated
-   1. one
-   2. two
-      1. sub-two
-         1. sub-sub-two
-   3. three
-
-** unnumerated
-   - One
-     - Two
-       - Three
-         - Four
-
-*** trivia
-    Doc-org could mean a lot of things, such as:
-    - document - organized
-    - docker - org mode
-    - docile - organist
-    A team of 42 linguists is currently searching for the answer.
-** with description
-   - element1 :: description for element one.
-   - element2 :: Very long description for element two, in order to show a
-     multiline description.
 
 * Some math
   You can insert latex equation, like equation [[eqn:phi]].

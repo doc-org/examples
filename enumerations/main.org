@@ -1,0 +1,7 @@
+* Introduction
+By adding =\usepackage[inline]{enumitem}= to you =header.tex= you can enable
+org-mode enumerations.
+** with description
+   - element1 :: description for element one.
+   - element2 :: Very long description for element two, in order to show a
+     multiline description.

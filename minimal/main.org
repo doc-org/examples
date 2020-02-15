@@ -1,0 +1,61 @@
+* Introduction
+  This example shows what you can do with a one line =header.tex= file.
+
+** subsection
+   This text is a inside subsection.
+
+* some code
+  Even if you specify the programming language, code syntax is not highlighted
+  by default.
+  #+begin_src c
+    int main()
+    {
+        printf("hello world\n");
+    }
+  #+end_src
+
+  #+begin_src python
+    # This program prints Hello, world!
+    print('Hello, world!')
+  #+end_src
+
+* lists
+** numerated
+   1. one
+   2. two
+      1. sub-two
+         1. sub-sub-two
+   3. three
+
+** unnumerated
+   - One
+     - Two
+       - Three
+         - Four
+
+*** trivia
+    Doc-org could mean a lot of things, such as:
+    - document - organized
+    - docker - org mode
+    - docile - organist
+    A team of 42 linguists is currently searching for the answer.
+
+* Some math
+  You can insert latex equation, like equation [[eqn:phi]].
+  #+Name: eqn:phi
+  \begin{equation}
+  \phi = \frac{2\pi fD}{c}
+  \end{equation}
+** Other latex equations
+   Equation [[eqn:phase_range]] reference.
+
+   #+Name: eqn:phase_range
+   \begin{equation}
+   D = \frac{c\phi}{2\pi f}
+   \end{equation}
+
+*** A more complicated equation
+
+    \begin{equation}
+    \Delta TOF_{est} = \frac{k_T TOF}{1+k_T } - 0.5 \frac{\mu_A' - \mu_T'}{1+k_T}.
+    \end{equation}
