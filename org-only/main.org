@@ -36,3 +36,10 @@ Be sure to check [[https://orgmode.org/manual/LaTeX-Export.html][latex export]] 
 
 * references
 You can add references to other sections, like section [[Introduction]].
+
+* Images
+  You can insert image, for example see image [[fig:example_image]].
+
+  #+CAPTION: Example image.
+  #+NAME:   fig:example_image
+  [[./img/example_image.png]]
