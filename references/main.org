@@ -13,10 +13,23 @@
 
 * Tables
   Reference to [[anchor_table]].
+  Caption is required for the reference to work properly.
 
   #+NAME: anchor_table
+  #+CAPTION: a nice table
   | Anchor |   MAE |
   |--------+-------+
   | a1     | 6.871 |
   | a2     | 5.275 |
   | a3     | 5.406 |
+
+* Code
+  You can refer to code [[some_c_code]]
+
+  #+NAME: some_c_code
+  #+begin_src c
+    int main()
+    {
+        printf("hello world\n");
+    }
+  #+end_src
