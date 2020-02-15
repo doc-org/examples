@@ -22,6 +22,8 @@
 
   In line [[(example_sum)]] you just do an assignment.
 
+  See [[https://orgmode.org/manual/Literal-Examples.html][literal examples]] documentation if you want explanation about this stuff.
+
 ** python code
   #+begin_src python
     # This program prints Hello, world!
