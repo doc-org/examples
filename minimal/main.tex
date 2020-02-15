@@ -1,0 +1,92 @@
+\input{header.tex}
+
+\begin{document}
+\section{Introduction}
+\label{sec:org784e98f}
+This example shows what you can do with a one line \texttt{header.tex} file.
+
+\subsection{subsection}
+\label{sec:org8d50140}
+This text is a inside subsection.
+
+\section{some code}
+\label{sec:org5cc47db}
+Even if you specify the programming language, code syntax is not highlighted
+by default.
+\begin{verbatim}
+int main()
+{
+    printf("hello world\n");
+}
+\end{verbatim}
+
+\begin{verbatim}
+# This program prints Hello, world!
+print('Hello, world!')
+\end{verbatim}
+
+\section{lists}
+\label{sec:org96d5097}
+\subsection{numerated}
+\label{sec:org197df36}
+\begin{enumerate}
+\item one
+\item two
+\begin{enumerate}
+\item sub-two
+\begin{enumerate}
+\item sub-sub-two
+\end{enumerate}
+\end{enumerate}
+\item three
+\end{enumerate}
+
+\subsection{unnumerated}
+\label{sec:org57fda70}
+\begin{itemize}
+\item One
+\begin{itemize}
+\item Two
+\begin{itemize}
+\item Three
+\begin{itemize}
+\item Four
+\end{itemize}
+\end{itemize}
+\end{itemize}
+\end{itemize}
+
+\subsubsection{trivia}
+\label{sec:org47d2622}
+Doc-org could mean a lot of things, such as:
+\begin{itemize}
+\item document - organized
+\item docker - org mode
+\item docile - organist
+\end{itemize}
+A team of 42 linguists is currently searching for the answer.
+
+\section{Some math}
+\label{sec:org0c04387}
+You can insert latex equation, like equation \ref{eq:orgaa024aa}.
+\begin{equation}
+\label{eq:orgaa024aa}
+\phi = \frac{2\pi fD}{c}
+\end{equation}
+\subsection{Other latex equations}
+\label{sec:orge1e5510}
+Equation \ref{eq:orgb77a1d3} reference.
+
+\begin{equation}
+\label{eq:orgb77a1d3}
+D = \frac{c\phi}{2\pi f}
+\end{equation}
+
+\subsubsection{A more complicated equation}
+\label{sec:org96269e0}
+
+\begin{equation}
+\Delta TOF_{est} = \frac{k_T TOF}{1+k_T } - 0.5 \frac{\mu_A' - \mu_T'}{1+k_T}.
+\end{equation}
+
+\end{document}
