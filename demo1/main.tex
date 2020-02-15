@@ -2,56 +2,33 @@
 
 \begin{document}
 \maketitle
-% Created 2020-02-13 Thu 20:12
-% Intended LaTeX compiler: pdflatex
-\documentclass[11pt]{article}
-\usepackage[utf8]{inputenc}
-\usepackage[T1]{fontenc}
-\usepackage{graphicx}
-\usepackage{grffile}
-\usepackage{longtable}
-\usepackage{wrapfig}
-\usepackage{rotating}
-\usepackage[normalem]{ulem}
-\usepackage{amsmath}
-\usepackage{textcomp}
-\usepackage{amssymb}
-\usepackage{capt-of}
-\usepackage{hyperref}
-\author{root}
-\date{\today}
-\title{}
-\hypersetup{
- pdfauthor={root},
- pdftitle={},
- pdfkeywords={},
- pdfsubject={},
- pdfcreator={Emacs 26.1 (Org mode 9.1.9)}, 
- pdflang={English}}
-\begin{document}
-
-\tableofcontents
-
 \section{section}
-\label{sec:orgf55b3dd}
+\label{sec:org88f058c}
 This example shows what you can do with a minimal \texttt{header.tex} file.
 To change the aspect of what you see, edit it!
 \subsection{subsection}
-\label{sec:org9a2f40c}
-This text is a inside subsection. You can add a reference to section \ref{sec:orgf55b3dd}.
+\label{sec:org3551d0b}
+This text is a inside subsection. You can add a reference to section \ref{sec:org88f058c}.
 
 \section{some code}
-\label{sec:org1ab4557}
+\label{sec:org638502b}
+If you specify the programming language, code syntax is highlighted.
 \begin{verbatim}
 int main()
 {
-  printf("hello world\n");
+    printf("hello world\n");
 }
 \end{verbatim}
+
+\begin{verbatim}
+# This program prints Hello, world!
+print('Hello, world!')
+\end{verbatim}
+
 \section{lists}
-\label{sec:org80cf81a}
+\label{sec:org61e129b}
 \subsection{numerated}
-\label{sec:orgcca49fa}
+\label{sec:org1f91ed4}
 \begin{enumerate}
 \item one
 \item two
@@ -65,7 +42,7 @@ int main()
 \end{enumerate}
 
 \subsection{unnumerated}
-\label{sec:orgd299589}
+\label{sec:org3e4ea35}
 \begin{itemize}
 \item One
 \begin{itemize}
@@ -80,7 +57,7 @@ int main()
 \end{itemize}
 
 \subsubsection{trivia}
-\label{sec:orgb900288}
+\label{sec:org90b5b17}
 Doc-org could mean a lot of things, such as:
 \begin{itemize}
 \item document - organized
@@ -89,7 +66,7 @@ Doc-org could mean a lot of things, such as:
 \end{itemize}
 A team of 42 linguists is currently searching for the answer.
 \subsection{with description}
-\label{sec:orgbc8079b}
+\label{sec:org50e7309}
 \begin{description}
 \item[{element1}] description for element one.
 \item[{element2}] Very long description for element two, in order to show a
@@ -97,30 +74,30 @@ multiline description.
 \end{description}
 
 \section{Some math}
-\label{sec:org037ed9e}
-You can insert latex equation, like equation \ref{eq:org7544cd1}.
+\label{sec:org736e91b}
+You can insert latex equation, like equation \ref{eq:orgfb488e2}.
 \begin{equation}
-\label{eq:org7544cd1}
+\label{eq:orgfb488e2}
 \phi = \frac{2\pi fD}{c}
 \end{equation}
 \subsection{Other latex equations}
-\label{sec:org7e20800}
-Equation \ref{eq:org10039c8} reference.
+\label{sec:org9500a05}
+Equation \ref{eq:org4d7d6db} reference.
 
 \begin{equation}
-\label{eq:org10039c8}
+\label{eq:org4d7d6db}
 D = \frac{c\phi}{2\pi f}
 \end{equation}
 
 \subsubsection{A more complicated equation}
-\label{sec:org848dc0e}
+\label{sec:org579094f}
 
 \begin{equation}
 \Delta TOF_{est} = \frac{k_T TOF}{1+k_T } - 0.5 \frac{\mu_A' - \mu_T'}{1+k_T}.
 \end{equation}
 
 \section{tables}
-\label{sec:org94987ae}
+\label{sec:org579c6ff}
 
 look how cute is this simple table:
 
@@ -134,7 +111,7 @@ one & two\\
 \end{center}
 
 \begin{table}[htbp]
-\caption{\label{tab:orgb331c57}
+\caption{\label{tab:org4d9ac3f}
 You can add captions to your tables}
 \centering
 \begin{tabular}{lrrrrr}
@@ -147,18 +124,18 @@ a3 & 5.406 & 0.672 & 1.117 & 0.114 & 6.457\\
 \end{table}
 
 \section{Images}
-\label{sec:org0ea13d3}
-You can insert image, for example see image \ref{fig:org9a04330}.
+\label{sec:org589a4f9}
+You can insert image, for example see image \ref{fig:orgdd8118c}.
 
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=.9\linewidth]{./img/example_image.png}
-\caption{\label{fig:org9a04330}
+\caption{\label{fig:orgdd8118c}
 Example image.}
 \end{figure}
 
 \subsection{image matrix}
-\label{sec:org05b207c}
+\label{sec:org96efb8a}
 In image \ref{fig:image_matrix} you can find an example of how to combine different images
 into one in latex.
 
@@ -174,6 +151,5 @@ into one in latex.
   \subfloat[Case 6.]{\includegraphics[width=0.55\textwidth]{./img/example_image.png}\label{fig:f6}}
   \caption{\label{fig:image_matrix}Combine more pictures into one.}
 \end{figure}
-\end{document}
 
 \end{document}

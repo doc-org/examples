@@ -1,0 +1,69 @@
+% Created 2020-02-15 Sat 10:46
+% Intended LaTeX compiler: pdflatex
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{grffile}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\author{Marco Ieni}
+\date{\today}
+\title{Org mode only}
+\hypersetup{
+ pdfauthor={Marco Ieni},
+ pdftitle={Org mode only},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 26.1 (Org mode 9.1.9)}, 
+ pdflang={English}}
+\begin{document}
+
+\maketitle
+\tableofcontents
+
+
+\section{Introduction}
+\label{sec:org5274384}
+This is an example of how you can use the \texttt{auto\_latex} feature.
+In this feature, in fact, \texttt{header.tex} is not included automatically by
+doc-org.
+In fact, the latex output of this file will be the same of the emacs
+default export.
+
+\section{Advantages}
+\label{sec:org7dcfa26}
+If you don't care about specific latex customization, emacs will do the work for
+you.
+
+\section{Disadvantages}
+\label{sec:org6d20863}
+In my opinion, if you don't like emacs defaults, it becomes complicated to
+customize latex output.
+
+\section{Customize latex}
+\label{sec:org015d33f}
+Here is an example of how you can customize latex output
+\begin{verbatim}
+# do not show table of content
+#+OPTIONS: toc:nil
+
+# custom latex class
+#+LaTeX_CLASS: book
+
+# include an entire latex file
+#+LATEX_HEADER: \input{my_file.tex}
+
+# extra packages
+#+LATEX_HEADER: \usepackage{my-package}
+\end{verbatim}
+
+Be sure to check \href{https://orgmode.org/manual/LaTeX-Export.html}{latex export} documentation in org-mode website.
+\end{document}
