@@ -1,0 +1,13 @@
+* state machine 1
+\begin{document}
+\digraph[scale=0.5]{abc}{rankdir=LR; a->b->c
+a [label=<foo<SUP>bar</SUP>>];}
+\end{document}
+
+* state machine 2
+\begin{document}
+   \digraph{abc}{
+      rankdir=LR;
+      a -> b -> c;
+   }
+\end{document}
