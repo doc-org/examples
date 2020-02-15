@@ -46,6 +46,10 @@
   \begin{equation}
   \phi = \frac{2\pi fD}{c}
   \end{equation}
+
+  As you can see, reference to equations works by default, but see =references=
+  example if you want to know more.
+
 ** Other latex equations
    Equation [[eqn:phase_range]] reference.
 
