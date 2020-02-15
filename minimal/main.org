@@ -2,18 +2,27 @@
   This example shows what you can do with a one line =header.tex= file.
 
 ** subsection
-   This text is a inside subsection.
+   This text is a inside subsection. You can refer to other sections, like section [[Introduction]].
 
 * some code
   Even if you specify the programming language, code syntax is not highlighted
   by default.
-  #+begin_src c
+
+  #+begin_src c -n -r
     int main()
     {
-        printf("hello world\n");
+        printf("hello world\n"); (ref:print_c)
+  #+end_src
+
+  In line [[(print_c)]] you print =hello world= to =stdout=.
+  #+begin_src c +n -r
+        int a = 1 + 2; (ref:example_sum)
     }
   #+end_src
 
+  In line [[(example_sum)]] you just do an assignment.
+
+** python code
   #+begin_src python
     # This program prints Hello, world!
     print('Hello, world!')
@@ -48,7 +57,7 @@
   \end{equation}
 
   As you can see, reference to equations works by default, but see =references=
-  example if you want to know more.
+  example if you want links to be clickable.
 
 ** Other latex equations
    Equation [[eqn:phase_range]] reference.
