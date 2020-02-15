@@ -1,4 +1,4 @@
-% Created 2020-02-15 Sat 13:53
+% Created 2020-02-15 Sat 14:08
 % Intended LaTeX compiler: pdflatex
 \documentclass[11pt]{article}
 \usepackage[utf8]{inputenc}
@@ -31,7 +31,7 @@
 
 
 \section{Introduction}
-\label{sec:org13e3a34}
+\label{sec:org38e70a3}
 This is an example of how you can use the \texttt{auto\_latex} feature.
 In this feature, in fact, \texttt{header.tex} is not included automatically by
 doc-org.
@@ -39,17 +39,17 @@ In fact, the latex output of this file will be the same of the emacs
 default export.
 
 \section{Advantages}
-\label{sec:org94b60f0}
+\label{sec:org2e9252f}
 If you don't care about specific latex customization, emacs will do the work for
 you.
 
 \section{Disadvantages}
-\label{sec:orge9bcaa4}
+\label{sec:org218009d}
 In my opinion, if you don't like emacs defaults, it becomes complicated to
 customize latex output.
 
 \section{Customize latex}
-\label{sec:orgff5fa4e}
+\label{sec:org55f202c}
 Here is an example of how you can customize latex output
 \begin{verbatim}
 # do not show table of content
@@ -68,6 +68,17 @@ Here is an example of how you can customize latex output
 Be sure to check \href{https://orgmode.org/manual/LaTeX-Export.html}{latex export} documentation in org-mode website.
 
 \section{references}
-\label{sec:org30103fd}
-You can add references to other sections, like section \ref{sec:org13e3a34}.
+\label{sec:org6fdf6b9}
+You can add references to other sections, like section \ref{sec:org38e70a3}.
+
+\section{Images}
+\label{sec:org5077bf0}
+You can insert image, for example see image \ref{fig:org02e5c43}.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=.9\linewidth]{./img/example_image.png}
+\caption{\label{fig:org02e5c43}
+Example image.}
+\end{figure}
 \end{document}
