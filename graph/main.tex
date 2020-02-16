@@ -2,19 +2,16 @@
 
 \begin{document}
 \section{state machine 1}
-\label{sec:org8fec622}
-\begin{document}
-\digraph[scale=0.5]{abc}{rankdir=LR; a->b->c
-a [label=<foo<SUP>bar</SUP>>];}
-\end{document}
+\label{sec:org6f2b3dc}
 
-\section{state machine 2}
-\label{sec:org320225f}
-\begin{document}
-   \digraph{abc}{
-      rankdir=LR;
-      a -> b -> c;
-   }
-\end{document}
+You can create graphs with graphviz.
+Enabling \texttt{shell\_escape} option in \texttt{config.json} is required if you want latex
+to automatically generate the graph.
+
+\digraph[scale=0.5]{abc}{
+    rankdir=LR;
+    a->b->c
+    a [label=<foo<SUP>bar</SUP>>];
+}
 
 \end{document}
