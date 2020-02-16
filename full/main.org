@@ -1,13 +1,26 @@
 # tell latex to insert a title
 \maketitle
-
-# tell latex to insert a page break
+\thispagestyle{empty}
 \newpage
 
-* section
-  This example shows what you can do with a minimal =header.tex= file.
-  To change the aspect of what you see, edit it!
+\pagenumbering{roman}
+\tableofcontents
+\newpage
 
+\pagestyle{plain}
+\pagenumbering{arabic}
+
+* Introduction
+  This example shows a lot of what you can achieve with =doc-org=.
+
+  However, =doc-org= uses latex, emacs and org-mode, so the sky is the limit and
+  there will never be a /"full"/ example.
+
+** header
+  The =header.tex= file of this example is a good starting point for your
+  document, because it supports a lot of features.
+  Of course, reading all the other examples related to each single feature is
+  recommended to understand what's the role of every line of the header.
 * some code
   If you specify the programming language, code syntax is highlighted.
   #+begin_src c
