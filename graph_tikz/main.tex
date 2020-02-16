@@ -1,0 +1,33 @@
+\input{header.tex}
+
+\begin{document}
+\begin{tikzpicture}%
+  [>=stealth,
+   shorten >=1pt,
+   node distance=2cm,
+   on grid,
+   auto,
+   every state/.style={draw=black!60, fill=black!5, very thick}
+  ]
+\node[state] (mid)                  {2};
+\node[state] (upper) [above=of mid] {1};
+\node[state] (right) [right=of mid] {4};
+\node[state] (lower) [below=of mid] {3};
+
+\path[->]
+%   FROM       BEND/LOOP           POSITION OF LABEL   LABEL   TO
+   (upper) edge[bend left]     node                      {a} (right)
+           edge[bend right=80] node[swap,very near start]{b} (lower)
+           edge[loop above]    node                      {c} (upper)
+   (mid)   edge[bend left=10]  node                      {d} (right)
+           edge[loop left]     node                      {e} (mid)
+           edge                node                      {f} (lower)
+           edge                node                      {g} (upper)
+   (lower) edge[bend left=70]  node[swap,very near start]{h} (upper)
+           edge[bend right]    node[swap]                {i} (right)
+           edge[loop below]    node                      {j} (lower)
+   (right) edge[bend left=10]  node                      {k} (mid)
+   ;
+\end{tikzpicture}
+
+\end{document}
