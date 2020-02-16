@@ -1,6 +1,16 @@
 * state machine 1
+
+# if you don't use #+begin_export latex, org-mode will add some '\' characters
+# that will mess up everything
+
+You can create graphs with graphviz.
+Enabling =shell_escape= option in =config.json= is required if you want latex
+to automatically generate the graph.
+
+#+begin_export latex
 \digraph[scale=0.5]{abc}{
     rankdir=LR;
     a->b->c
     a [label=<foo<SUP>bar</SUP>>];
 }
+#+end_export
