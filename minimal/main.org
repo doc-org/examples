@@ -4,6 +4,9 @@
 ** subsection
    This text is a inside subsection. You can refer to other sections, like section [[Introduction]].
 
+   If you want references to be clickable add =\usepackage{hyperref}= to =header.tex=.
+   See =links= example, too.
+
 * some code
   Even if you specify the programming language, code syntax is not highlighted
   by default.
