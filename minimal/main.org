@@ -22,7 +22,7 @@
 
   In line [[(example-sum)]] you just do an assignment.
 
-  See [[https://orgmode.org/manual/Literal-Examples.html][literal examples]] documentation if you want explanation about this stuff.
+  # See https://orgmode.org/manual/Literal-Examples.html if you want explanation about this stuff.
 
   In my experience unserscore does not work with code references. For example
   =print_c= will not work in this case.
