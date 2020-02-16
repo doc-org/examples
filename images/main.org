@@ -1,0 +1,6 @@
+* Images
+  You can insert image, for example see image [[fig:example_image]].
+
+  #+CAPTION: Example image.
+  #+NAME:   fig:example_image
+  [[./img/example_image.png]]
