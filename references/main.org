@@ -1,8 +1,9 @@
 * Introduction
-  This example shows how references works.
+  This example shows how links and references works.
+  Every link is clickable!
 
 * Sections
-  You can add a reference to section [[Introduction]].
+  You can add a reference to section [[*Introduction]].
 
 * Equations
   You can refer to equation [[eqn:phi]].
@@ -12,24 +13,32 @@
   \end{equation}
 
 * Tables
-  Reference to [[anchor_table]].
+  Reference to table [[anchor_table]].
   Caption is required for the reference to work properly.
 
   #+NAME: anchor_table
   #+CAPTION: a nice table
   | Anchor |   MAE |
-  |--------+-------+
+  |--------+-------|
   | a1     | 6.871 |
   | a2     | 5.275 |
   | a3     | 5.406 |
 
-* Code
-  You can refer to code [[some_c_code]]
+* items
+  1. one item
+  2. <<target>>another item
+  Here we refer to item [[target]].
 
-  #+NAME: some_c_code
-  #+begin_src c
-    int main()
-    {
-        printf("hello world\n");
-    }
-  #+end_src
+* links
+  Visit the [[https://orgmode.org/][official org mode website]].
+
+* manual link
+  # source: https://www.overleaf.com/learn/latex/Hyperlinks
+
+  It's also possible to link directly any word
+  or \hyperlink{thesentence}{any sentence} in you document.
+
+  If you read this text, you will get no information.  Really?
+  Is there no information?
+
+  For instance \hypertarget{thesentence}{this sentence}.
