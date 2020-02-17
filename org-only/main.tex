@@ -1,4 +1,4 @@
-% Created 2020-02-16 Sun 20:02
+% Created 2020-02-17 Mon 21:49
 % Intended LaTeX compiler: pdflatex
 \documentclass[11pt]{article}
 \usepackage[utf8]{inputenc}
@@ -31,7 +31,7 @@
 
 
 \section{Introduction}
-\label{sec:org4c3bba6}
+\label{sec:org5142422}
 This is an example of how you can use the \texttt{auto\_latex} feature.
 In this feature, in fact, \texttt{header.tex} is not included automatically by
 doc-org.
@@ -39,17 +39,17 @@ In fact, the latex output of this file will be the same of the emacs
 default export.
 
 \section{Advantages}
-\label{sec:orgd534333}
+\label{sec:org054b756}
 If you don't care about specific latex customization, emacs will do the work for
 you.
 
 \section{Disadvantages}
-\label{sec:org014a04a}
+\label{sec:org9518fae}
 In my opinion, if you don't like emacs defaults, it becomes complicated to
 customize latex output.
 
 \section{Customize latex}
-\label{sec:org0e81fc0}
+\label{sec:org8591a65}
 Here is an example of how you can customize latex output
 \begin{verbatim}
 # do not show table of content
@@ -68,17 +68,30 @@ Here is an example of how you can customize latex output
 Be sure to check \href{https://orgmode.org/manual/LaTeX-Export.html}{latex export} documentation in org-mode website.
 
 \section{references}
-\label{sec:orgedb1c0a}
-You can add references to other sections, like section \ref{sec:org4c3bba6}.
+\label{sec:org1ca4ca0}
+You can add references to other sections, like section \ref{sec:org5142422}.
 
 \section{Images}
-\label{sec:org61c20f4}
-You can insert image, for example see image \ref{fig:orge528212}.
+\label{sec:orgeea1b0a}
+You can insert image, for example see image \ref{fig:org8a0b476}.
 
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=.9\linewidth]{./img/example_image.png}
-\caption{\label{fig:orge528212}
+\caption{\label{fig:org8a0b476}
 Example image.}
 \end{figure}
+
+\section{source code}
+\label{sec:org863c084}
+Some c code:
+
+\begin{verbatim}
+#include <stdio.h>
+
+int main () {
+    int a = 1;
+    printf("hello world\n");
+}
+\end{verbatim}
 \end{document}
