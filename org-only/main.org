@@ -43,3 +43,15 @@ You can add references to other sections, like section [[Introduction]].
   #+CAPTION: Example image.
   #+NAME:   fig:example_image
   [[./img/example_image.png]]
+
+* source code
+  Some c code:
+
+#+begin_src c
+#include <stdio.h>
+
+int main () {
+    int a = 1;
+    printf("hello world\n");
+}
+#+end_src
