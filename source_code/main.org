@@ -1,0 +1,34 @@
+* source code
+
+** Some c code
+#+begin_export latex
+\begin{lstlisting}[language=C, caption=C example]
+#include <stdio.h>
+
+int main () {
+    int a = 1;
+    printf("hello world\n");
+}
+\end{lstlisting}
+#+end_export
+
+** python
+#+begin_export latex
+\begin{lstlisting}[language=Python, caption=Python example]
+my_string = "Hello, World!"
+print(my_string)
+\end{lstlisting}
+#+end_export
+
+** java
+#+begin_export latex
+\begin{lstlisting}[language=Java, caption=Java example]
+public class HelloWorld {
+
+    public static void main(String[] args) {
+        System.out.println("Hello, World");
+    }
+
+}
+\end{lstlisting}
+#+end_export
