@@ -1,0 +1,32 @@
+* source code
+
+** Some c code
+#+begin_src c
+#include <stdio.h>
+
+int main () {
+    int a = 1;
+    printf("hello world\n");
+}
+#+end_src
+
+** python
+#+begin_src python
+  # set a string
+  my_string = "Hello, World!"
+
+  # print string to stdout
+  print(my_string)
+#+end_src
+
+** java
+#+begin_src java
+  public class HelloWorld {
+
+      // main function
+      public static void main(String[] args) {
+          System.out.println("Hello, World");
+      }
+
+  }
+#+end_src
