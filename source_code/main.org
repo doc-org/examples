@@ -5,6 +5,7 @@
 \begin{lstlisting}[language=C, caption=C example]
 #include <stdio.h>
 
+// main function
 int main () {
     int a = 1;
     printf("hello world\n");
@@ -15,7 +16,10 @@ int main () {
 ** python
 #+begin_export latex
 \begin{lstlisting}[language=Python, caption=Python example]
+# set a string
 my_string = "Hello, World!"
+
+# print string to stdout
 print(my_string)
 \end{lstlisting}
 #+end_export
@@ -25,6 +29,7 @@ print(my_string)
 \begin{lstlisting}[language=Java, caption=Java example]
 public class HelloWorld {
 
+    // main function
     public static void main(String[] args) {
         System.out.println("Hello, World");
     }
