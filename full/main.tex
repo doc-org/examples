@@ -13,20 +13,20 @@
 \pagenumbering{arabic}
 
 \section{Introduction}
-\label{sec:orged26bb3}
+\label{sec:orgea50e24}
 This example shows a lot of what you can achieve with \texttt{doc-org}.
 
 However, \texttt{doc-org} uses latex, emacs and org-mode, so the sky is the limit and
 there will never be a \emph{"full"} example.
 
 \subsection{header}
-\label{sec:org9b189e1}
+\label{sec:orgfb5a28d}
 The \texttt{header.tex} file of this example is a good starting point for your
 document, because it supports a lot of features.
 Of course, reading all the other examples related to each single feature is
 recommended to understand what's the role of every line of the header.
 \section{some code}
-\label{sec:orgd085e1f}
+\label{sec:org6073d8c}
 If you specify the programming language, code syntax is highlighted.
 \begin{minted}[]{c}
 int main()
@@ -41,30 +41,81 @@ print('Hello, world!')
 \end{minted}
 
 \section{Some math}
-\label{sec:org07ac312}
-You can insert latex equation, like equation \ref{eq:org12adf39}.
+\label{sec:org87b003b}
+You can insert latex equation, like equation \ref{eq:org8847fac}.
 \begin{equation}
-\label{eq:org12adf39}
+\label{eq:org8847fac}
 \phi = \frac{2\pi fD}{c}
 \end{equation}
 \subsection{Other latex equations}
-\label{sec:org008c16e}
-Equation \ref{eq:org1f4f529} reference.
+\label{sec:orgf2c0f78}
+Equation \ref{eq:orgb1b8cbd} reference.
 
 \begin{equation}
-\label{eq:org1f4f529}
+\label{eq:orgb1b8cbd}
 D = \frac{c\phi}{2\pi f}
 \end{equation}
 
 \subsubsection{A more complicated equation}
-\label{sec:org53a23df}
+\label{sec:org4748a9a}
 
 \begin{equation}
 \Delta TOF_{est} = \frac{k_T TOF}{1+k_T } - 0.5 \frac{\mu_A' - \mu_T'}{1+k_T}.
 \end{equation}
 
+\section{lists}
+\label{sec:org2667222}
+\subsection{numerated}
+\label{sec:orgfcecd3b}
+\begin{enumerate}
+\item one
+\item two
+\begin{enumerate}
+\item sub-two
+\begin{enumerate}
+\item sub-sub-two
+\end{enumerate}
+\end{enumerate}
+\item \label{org8157e6e}three
+\end{enumerate}
+
+Here we refer to item \ref{org8157e6e}.
+
+\subsection{unnumerated}
+\label{sec:org67514c8}
+\begin{itemize}
+\item One
+\begin{itemize}
+\item Two
+\begin{itemize}
+\item Three
+\begin{itemize}
+\item Four
+\end{itemize}
+\item Five
+\end{itemize}
+\end{itemize}
+\end{itemize}
+
+\subsubsection{trivia}
+\label{sec:org27c613a}
+Doc-org could mean a lot of things, such as:
+\begin{itemize}
+\item document - organized
+\item docker - org mode
+\item docile - organist
+\end{itemize}
+A team of 42 linguists is currently searching for the answer.
+
+\subsection{Enumeration example}
+\label{sec:orgbf3a903}
+\begin{description}
+\item[{element1}] description for element one.
+\item[{element2}] Very long description for element two, in order to show a
+multiline description.
+\end{description}
 \section{tables}
-\label{sec:org2a87668}
+\label{sec:orgfd79ee3}
 
 look how cute is this simple table:
 
@@ -75,11 +126,10 @@ one & two\\
 1 & 2\\
 3 & 4\\
 \end{tabular}
+
 \end{center}
 
 \begin{table}[htbp]
-\caption{\label{tab:org62c93b9}
-You can add captions to your tables}
 \centering
 \begin{tabular}{lrrrrr}
 Anchor & MAE & Correlation & MMA & MAPE & RMSE\\
@@ -88,21 +138,24 @@ a1 & 6.871 & -0.372 & 1.164 & 0.157 & 8.515\\
 a2 & 5.275 & 0.329 & 1.127 & 0.117 & 6.332\\
 a3 & 5.406 & 0.672 & 1.117 & 0.114 & 6.457\\
 \end{tabular}
+\caption{\label{tab:orgd865925}
+You can add captions to your tables}
+
 \end{table}
 
 \section{Images}
-\label{sec:org64be456}
-You can insert image, for example see image \ref{fig:orgf12bbc3}.
+\label{sec:org72ef5be}
+You can insert image, for example see image \ref{fig:org280b78a}.
 
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=.9\linewidth]{./img/example_image.png}
-\caption{\label{fig:orgf12bbc3}
+\caption{\label{fig:org280b78a}
 Example image.}
 \end{figure}
 
 \subsection{image matrix}
-\label{sec:org6cbffb3}
+\label{sec:org923746a}
 In image \ref{fig:image_matrix} you can find an example of how to combine different images
 into one in latex.
 
