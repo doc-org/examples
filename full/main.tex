@@ -13,58 +13,58 @@
 \pagenumbering{arabic}
 
 \section{Introduction}
-\label{sec:org98855a7}
+\label{sec:orged26bb3}
 This example shows a lot of what you can achieve with \texttt{doc-org}.
 
 However, \texttt{doc-org} uses latex, emacs and org-mode, so the sky is the limit and
 there will never be a \emph{"full"} example.
 
 \subsection{header}
-\label{sec:orgdc79fd1}
+\label{sec:org9b189e1}
 The \texttt{header.tex} file of this example is a good starting point for your
 document, because it supports a lot of features.
 Of course, reading all the other examples related to each single feature is
 recommended to understand what's the role of every line of the header.
 \section{some code}
-\label{sec:org9b73371}
+\label{sec:orgd085e1f}
 If you specify the programming language, code syntax is highlighted.
-\begin{verbatim}
+\begin{minted}[]{c}
 int main()
 {
     printf("hello world\n");
 }
-\end{verbatim}
+\end{minted}
 
-\begin{verbatim}
+\begin{minted}[]{python}
 # This program prints Hello, world!
 print('Hello, world!')
-\end{verbatim}
+\end{minted}
 
 \section{Some math}
-\label{sec:orga3573c5}
-You can insert latex equation, like equation \ref{eq:org78b74db}.
+\label{sec:org07ac312}
+You can insert latex equation, like equation \ref{eq:org12adf39}.
 \begin{equation}
-\label{eq:org78b74db}
+\label{eq:org12adf39}
 \phi = \frac{2\pi fD}{c}
 \end{equation}
 \subsection{Other latex equations}
-\label{sec:orgb47becf}
-Equation \ref{eq:org20056c2} reference.
+\label{sec:org008c16e}
+Equation \ref{eq:org1f4f529} reference.
 
 \begin{equation}
-\label{eq:org20056c2}
+\label{eq:org1f4f529}
 D = \frac{c\phi}{2\pi f}
 \end{equation}
 
 \subsubsection{A more complicated equation}
-\label{sec:org032a3a9}
+\label{sec:org53a23df}
 
 \begin{equation}
 \Delta TOF_{est} = \frac{k_T TOF}{1+k_T } - 0.5 \frac{\mu_A' - \mu_T'}{1+k_T}.
 \end{equation}
 
 \section{tables}
-\label{sec:orgd050fbb}
+\label{sec:org2a87668}
 
 look how cute is this simple table:
 
@@ -78,7 +78,7 @@ one & two\\
 \end{center}
 
 \begin{table}[htbp]
-\caption{\label{tab:orgbc7aa3e}
+\caption{\label{tab:org62c93b9}
 You can add captions to your tables}
 \centering
 \begin{tabular}{lrrrrr}
@@ -91,18 +91,18 @@ a3 & 5.406 & 0.672 & 1.117 & 0.114 & 6.457\\
 \end{table}
 
 \section{Images}
-\label{sec:orgdc1b3b9}
-You can insert image, for example see image \ref{fig:orge4da110}.
+\label{sec:org64be456}
+You can insert image, for example see image \ref{fig:orgf12bbc3}.
 
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=.9\linewidth]{./img/example_image.png}
-\caption{\label{fig:orge4da110}
+\caption{\label{fig:orgf12bbc3}
 Example image.}
 \end{figure}
 
 \subsection{image matrix}
-\label{sec:org1a2e152}
+\label{sec:org6cbffb3}
 In image \ref{fig:image_matrix} you can find an example of how to combine different images
 into one in latex.
 
