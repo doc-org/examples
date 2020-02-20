@@ -55,6 +55,32 @@
     \Delta TOF_{est} = \frac{k_T TOF}{1+k_T } - 0.5 \frac{\mu_A' - \mu_T'}{1+k_T}.
     \end{equation}
 
+* lists
+** numerated
+   1. one
+   2. two
+      1. sub-two
+         1. sub-sub-two
+   3. three
+
+** unnumerated
+   - One
+     - Two
+       - Three
+         - Four
+       - Five
+
+*** trivia
+    Doc-org could mean a lot of things, such as:
+    - document - organized
+    - docker - org mode
+    - docile - organist
+    A team of 42 linguists is currently searching for the answer.
+
+** Enumeration example
+    - element1 :: description for element one.
+    - element2 :: Very long description for element two, in order to show a
+      multiline description.
 * tables
 
   look how cute is this simple table:
