@@ -19,17 +19,15 @@ jobs:
         mkdir deploy
         for dir in $examples; do
           mkdir deploy/$dir
-          cd $dir
           echo "process directory "$dir""
-          ls
-          ../doc-org/doc-org
+          ls "$dir"
+          ./doc-org/doc-org "$dir"
 
           # give current user ownership of the build directory
           current_user=$(whoami)
           sudo chown -R $current_user build
 
-          mv build/*.pdf build/*.tex ../deploy/$dir
-          cd ..
+          mv "$dir"/build/*.pdf "$dir"/build/*.tex deploy/$dir
         done
     - name: build website
       run: |
