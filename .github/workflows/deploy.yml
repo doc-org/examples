@@ -45,10 +45,9 @@ jobs:
           dir_basename=$(basename "$dir")
           echo "<h2>"$dir_basename"</h1>
               <ul>" >> deploy/index.html
-          files=$(ls "$dir")
-          echo files:
-          echo $files
-          for file in "$files"; do
+
+          # for each file in the directory
+          ls -1 "$dir" | while read file ; do
             echo "        <li><a href=\""$dir_basename"/"$file"\">"$file"</a></li>" >> deploy/index.html
           done
           echo "    </ul>" >> deploy/index.html
