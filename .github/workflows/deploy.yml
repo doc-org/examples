@@ -25,7 +25,7 @@ jobs:
 
           # give current user ownership of the build directory
           current_user=$(whoami)
-          sudo chown -R $current_user build
+          sudo chown -R $current_user "$dir"/build
 
           mv "$dir"/build/*.pdf "$dir"/build/*.tex deploy/$dir
         done
