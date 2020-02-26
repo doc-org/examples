@@ -42,14 +42,14 @@ jobs:
         Examples input <a href=\"https://github.com/doc-org/examples\">here</a>. Examples output:" >> deploy/index.html
 
         for dir in deploy/*/; do
-          dir_basename=$(basename $dir)
-          echo "<h2>$dir_basename</h1>
+          dir_basename=$(basename "$dir")
+          echo "<h2>"$dir_basename"</h1>
               <ul>" >> deploy/index.html
-          files=$(ls $dir)
+          files=$(ls "$dir")
           echo files:
           echo $files
-          for file in $files; do
-            echo "        <li><a href=\"$dir_basename/$file\">$file</a></li>" >> deploy/index.html
+          for file in "$files"; do
+            echo "        <li><a href=\""$dir_basename"/"$file"\">"$file"</a></li>" >> deploy/index.html
           done
           echo "    </ul>" >> deploy/index.html
         done
