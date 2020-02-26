@@ -1,4 +1,4 @@
-* state machine 1
+* simple state machine
 
 # if you don't use #+begin_export latex, org-mode will add some '\' characters
 # that will mess up everything
