@@ -2,7 +2,7 @@
 
 [[http://spacemacs.org][file:https://cdn.rawgit.com/syl20bnr/spacemacs/442d025779da2f62fc86c2082703697714db6514/assets/spacemacs-badge.svg]]
 
-Examples of documents created with doc-org.
+Examples of documents created with [[https://github.com/doc-org/doc-org][doc-org]].
 
 The output of the examples is automatically generated, you can see it [[https://doc-org.github.io/examples/][here]] or,
 if you prefer viewing it on github, go to the [[https://github.com/doc-org/examples/tree/gh-pages][gh-pages]] branch.
